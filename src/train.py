@@ -20,6 +20,7 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import RobustScaler
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 # ------------------------------------------------------------
 # 1. STUDENT INFORMATION
 # ------------------------------------------------------------
@@ -120,7 +121,7 @@ numerical_pipeline = Pipeline(
         ),
         (
             "scaler",
-            RobustScaler()
+            MinMaxScaler()
         )
     ]
 )
