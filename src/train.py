@@ -17,7 +17,7 @@ from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import RobustScaler
+
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
@@ -121,7 +121,7 @@ numerical_pipeline = Pipeline(
         ),
         (
             "scaler",
-            MinMaxScaler()
+            StandardScaler()
         )
     ]
 )
