@@ -120,7 +120,7 @@ numerical_pipeline = Pipeline(
         ),
         (
             "scaler",
-            StandardScaler()
+            RobustScaler()
         )
     ]
 )
