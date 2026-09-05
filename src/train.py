@@ -199,7 +199,7 @@ model_pipeline = Pipeline(
     steps=[
         (
             "preprocessing",
-            preprocessor
+            preprocessor,
         ),
         (
             "random_forest",
